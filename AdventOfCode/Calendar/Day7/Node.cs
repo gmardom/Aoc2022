@@ -1,4 +1,4 @@
-﻿namespace Day7;
+﻿namespace AdventOfCode.Calendar.Day7;
 
 public class Node
 {
