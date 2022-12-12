@@ -1,24 +1,20 @@
-﻿using static System.IO.File;
+﻿using AdventOfCode.Utils;
 
-namespace Day6;
+namespace AdventOfCode.Calendar.Day6;
 
-public class Puzzle
+[PuzzleSolution] public class Puzzle : Solution
 {
-    private readonly string _input;
+    public Puzzle() : base(6)
+    { }
 
-    public Puzzle(string file)
+    protected override void Part1()
     {
-        _input = ReadLines(file).ToArray()[0];
+        Print(1, FindStartOfAPacket(Input.Lines().ToArray()[0], 4));
     }
 
-    public void Part1()
+    protected override void Part2()
     {
-        Console.WriteLine(FindStartOfAPacket(_input, 4));
-    }
-
-    public void Part2()
-    {
-        Console.WriteLine(FindStartOfAPacket(_input, 14));
+        Print(2, FindStartOfAPacket(Input.Lines().ToArray()[0], 14));
     }
 
     private static int FindStartOfAPacket(string input, int signalLength)
