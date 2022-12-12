@@ -1,7 +1,5 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day3", "Day3\Day3.csproj", "{4959EA0F-E639-4B45-8E1B-313D39C49949}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day4", "Day4\Day4.csproj", "{4DFB4C95-7B1D-4340-8574-7077CB5FAD4A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day5", "Day5\Day5.csproj", "{4C9994AE-F005-4F59-9A24-C0674A5FDF5F}"
@@ -19,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4959EA0F-E639-4B45-8E1B-313D39C49949}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4959EA0F-E639-4B45-8E1B-313D39C49949}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4959EA0F-E639-4B45-8E1B-313D39C49949}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4959EA0F-E639-4B45-8E1B-313D39C49949}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4DFB4C95-7B1D-4340-8574-7077CB5FAD4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4DFB4C95-7B1D-4340-8574-7077CB5FAD4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DFB4C95-7B1D-4340-8574-7077CB5FAD4A}.Release|Any CPU.ActiveCfg = Release|Any CPU

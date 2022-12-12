@@ -1,41 +1,37 @@
-﻿using static System.IO.File;
+﻿using AdventOfCode.Utils;
 
-namespace Day3;
+namespace AdventOfCode.Calendar.Day3;
 
-public class Puzzle
+[PuzzleSolution] public class Puzzle : Solution
 {
-    private readonly List<string> _rucksacks = new();
+    public Puzzle() : base(3)
+    { }
 
-    public Puzzle(string file)
+    protected override void Part1()
     {
-        foreach (var rucksack in ReadLines(file))
-            _rucksacks.Add(rucksack);
-    }
-
-    public void Part1()
-    {
-        var sumOfPriorities = _rucksacks
+        var sumOfPriorities = Input.Lines()
             .Select(FindSameItemInCompartments)
             .Select(GetItemPriority)
             .Sum();
 
-        Console.WriteLine(sumOfPriorities);
+        Print(1, sumOfPriorities);
     }
 
-    public void Part2()
+    protected override void Part2()
     {
         const int elfGroupSize = 3;
+        var rucksacks = Input.Lines().ToList();
         var sumOfPriorities = 0;
 
-        for (var i = 0; i < _rucksacks.Count; i += elfGroupSize)
+        for (var i = 0; i < rucksacks.Count; i += elfGroupSize)
         {
-            var rucksacks = _rucksacks.GetRange(i, elfGroupSize);
-            var sameItem = FindSameItemInThreeRucksacks(rucksacks);
+            var rucksacksTmp = rucksacks.GetRange(i, elfGroupSize);
+            var sameItem = FindSameItemInThreeRucksacks(rucksacksTmp);
 
             sumOfPriorities += GetItemPriority(sameItem);
         }
 
-        Console.WriteLine(sumOfPriorities);
+        Print(2, sumOfPriorities);
     }
 
     private static char FindSameItemInCompartments(string items)
