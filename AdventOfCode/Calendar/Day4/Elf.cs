@@ -1,6 +1,6 @@
-﻿namespace Day4;
+﻿namespace AdventOfCode.Calendar.Day4;
 
-public class Elf
+public sealed class Elf
 {
     private readonly int _start;
     private readonly int _end;
