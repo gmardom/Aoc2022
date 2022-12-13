@@ -20,3 +20,4 @@ I chose C# because I wanted to learn more of it outside patterns used in Unity/G
 | Day 10 | [Cathode-Ray Tube](https://adventofcode.com/2022/day/10)        | [link](https://github.com/DominikMarcinowski/Aoc2022/tree/main/AdventOfCode/Calendar/Day10) |
 | Day 11 | [Monkey in the Middle](https://adventofcode.com/2022/day/11)    | [link](https://github.com/DominikMarcinowski/Aoc2022/tree/main/AdventOfCode/Calendar/Day11) |
 | Day 12 | [Hill Climbing Algorithm](https://adventofcode.com/2022/day/12) | [link](https://github.com/DominikMarcinowski/Aoc2022/tree/main/AdventOfCode/Calendar/Day12) |
+| Day 13 | [Distress Signal](https://adventofcode.com/2022/day/13)         | [link](https://github.com/DominikMarcinowski/Aoc2022/tree/main/AdventOfCode/Calendar/Day13) |
